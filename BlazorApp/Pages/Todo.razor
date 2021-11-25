@@ -13,7 +13,7 @@
 </ul> 
 
 <input placeholder="Something todo" @bind="newTodo" />
-<button>Add todo</button>
+<button @onclick="AddTodo">Add todo</button>
 
 @code {
     private List<TodoItem> todos = new();

@@ -8,57 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp
 build_property.RootNamespace = BlazorApp
-build_property.ProjectDir = c:\Users\mella\Tetris\Tetris\BlazorApp\
+build_property.ProjectDir = C:\Users\mella\Tetris\Tetris\BlazorApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\mella\Tetris\Tetris\BlazorApp
+build_property.MSBuildProjectDirectory = C:\Users\mella\Tetris\Tetris\BlazorApp
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/App.razor]
+[C:/Users/mella/Tetris/Tetris/BlazorApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Todo.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kby5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/mella/Tetris/Tetris/BlazorApp/_Imports.razor]
+[C:/Users/mella/Tetris/Tetris/BlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-3dsd3z3yec
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0qy933hfd2
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-7cxxmz0cwl
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Options.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3B0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8y4xg7p5z2
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Error.cshtml]
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Play.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-quadffupcb
+
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Host.cshtml]
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Layout.cshtml]
+[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

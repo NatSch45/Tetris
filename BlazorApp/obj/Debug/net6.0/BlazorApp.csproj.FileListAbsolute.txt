@@ -17,11 +17,12 @@ C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorAssemblyI
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorAssemblyInfo.cs
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\bundle\BlazorApp.styles.css
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\BlazorApp.dll
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\ref\BlazorApp.dll
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\BlazorApp.pdb
 C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\BlazorApp.genruntimeconfig.cache
+C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\Pages\Menu.razor.rz.scp.css
+C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\Pages\Play.razor.rz.scp.css
+C:\Users\mella\Tetris\Tetris\BlazorApp\obj\Debug\net6.0\scopedcss\Pages\Options.razor.rz.scp.css

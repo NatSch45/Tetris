@@ -1,134 +1,92 @@
-/* _content/BlazorApp/Shared/MainLayout.razor.rz.scp.css */
-.page[b-3dsd3z3yec] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+/* _content/BlazorApp/Pages/Menu.razor.rz.scp.css */
+.ban[b-0qy933hfd2]  {
+    color: aqua;
+}
+*[b-0qy933hfd2] {margin: 0; padding: 0; box-sizing: border-box;}
+.spacer[b-0qy933hfd2] {width: 100%; height: 100px;}
+
+body[b-0qy933hfd2] {font-family: "Open Sans", sans-serif;}
+
+nav[b-0qy933hfd2] {
+  width: 100%; 
+  background-color: #403e3e; 
+  display: flex;
+  justify-content: space-between;
+}
+.logo[b-0qy933hfd2] {
+  padding: 20px; 
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .nav-bar[b-0qy933hfd2] {
+  padding: 20px; 
+  display: flex; 
+}
+nav .nav-bar .nav-bar_item[b-0qy933hfd2] {
+  list-style-type: none;
+  padding: 0px 20px;
+}
+nav .nav-bar .dropdown[b-0qy933hfd2] {
+  position: relative;
+}
+nav .nav-bar .dropdown[b-0qy933hfd2]:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover[b-0qy933hfd2]:after{
+  transform: rotate(135deg);
+}
+nav .nav-bar .dropdown .project[b-0qy933hfd2] {
+  position: absolute;
+  transform: translateX(-20px) translateY(5px);
+  width: 110px;
+  background-color: #403e3e;
+  padding: 20px;
+  border-radius: 10px;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover .project[b-0qy933hfd2]{
+  height: 220px;
+  
+  visibility: visible;
 }
 
-main[b-3dsd3z3yec] {
-    flex: 1;
+nav .nav-bar .dropdown .project .drop-item[b-0qy933hfd2] {
+  list-style-type: none;
+  margin-bottom: 10px;
 }
-
-.sidebar[b-3dsd3z3yec] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+nav .nav-bar .nav-bar_item a[b-0qy933hfd2] {
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
-
-.top-row[b-3dsd3z3yec] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
+nav .nav-bar .nav-bar_item a[b-0qy933hfd2]:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: 0.1s ease-in-out;
 }
-
-    .top-row[b-3dsd3z3yec]  a, .top-row .btn-link[b-3dsd3z3yec] {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child[b-3dsd3z3yec] {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-3dsd3z3yec] {
-        display: none;
-    }
-
-    .top-row.auth[b-3dsd3z3yec] {
-        justify-content: space-between;
-    }
-
-    .top-row a[b-3dsd3z3yec], .top-row .btn-link[b-3dsd3z3yec] {
-        margin-left: 0;
-    }
+nav .nav-bar .nav-bar_item a:hover[b-0qy933hfd2]:after {
+  width: 100%;
 }
-
-@media (min-width: 641px) {
-    .page[b-3dsd3z3yec] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-3dsd3z3yec] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-3dsd3z3yec] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row[b-3dsd3z3yec], article[b-3dsd3z3yec] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-/* _content/BlazorApp/Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-7cxxmz0cwl] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row[b-7cxxmz0cwl] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-7cxxmz0cwl] {
-    font-size: 1.1rem;
-}
-
-.oi[b-7cxxmz0cwl] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item[b-7cxxmz0cwl] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type[b-7cxxmz0cwl] {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type[b-7cxxmz0cwl] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-7cxxmz0cwl]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item[b-7cxxmz0cwl]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
-
-.nav-item[b-7cxxmz0cwl]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-7cxxmz0cwl] {
-        display: none;
-    }
-
-    .collapse[b-7cxxmz0cwl] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
+/* _content/BlazorApp/Pages/Options.razor.rz.scp.css */
+/* _content/BlazorApp/Pages/Play.razor.rz.scp.css */

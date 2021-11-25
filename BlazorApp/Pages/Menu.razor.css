@@ -1,36 +1,35 @@
-/* _content/BlazorApp/Pages/Menu.razor.rz.scp.css */
-.ban[b-0qy933hfd2]  {
+.ban  {
     color: aqua;
 }
-*[b-0qy933hfd2] {margin: 0; padding: 0; box-sizing: border-box;}
-.spacer[b-0qy933hfd2] {width: 100%; height: 100px;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.spacer {width: 100%; height: 100px;}
 
-body[b-0qy933hfd2] {font-family: "Open Sans", sans-serif;}
+body {font-family: "Open Sans", sans-serif;}
 
-nav[b-0qy933hfd2] {
+nav {
   width: 100%; 
   background-color: #403e3e; 
   display: flex;
   justify-content: space-between;
 }
-.logo[b-0qy933hfd2] {
+.logo {
   padding: 20px; 
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-nav .nav-bar[b-0qy933hfd2] {
+nav .nav-bar {
   padding: 20px; 
   display: flex; 
 }
-nav .nav-bar .nav-bar_item[b-0qy933hfd2] {
+nav .nav-bar .nav-bar_item {
   list-style-type: none;
   padding: 0px 20px;
 }
-nav .nav-bar .dropdown[b-0qy933hfd2] {
+nav .nav-bar .dropdown {
   position: relative;
 }
-nav .nav-bar .dropdown[b-0qy933hfd2]:after {
+nav .nav-bar .dropdown:after {
   content: "";
   position: absolute;
   right: 0;
@@ -43,10 +42,10 @@ nav .nav-bar .dropdown[b-0qy933hfd2]:after {
   border-bottom: 2px solid #fff;
   transition: 0.2s ease-in-out;
 }
-nav .nav-bar .dropdown:hover[b-0qy933hfd2]:after{
+nav .nav-bar .dropdown:hover:after{
   transform: rotate(135deg);
 }
-nav .nav-bar .dropdown .project[b-0qy933hfd2] {
+nav .nav-bar .dropdown .project {
   position: absolute;
   transform: translateX(-20px) translateY(5px);
   width: 110px;
@@ -58,24 +57,24 @@ nav .nav-bar .dropdown .project[b-0qy933hfd2] {
   visibility: hidden;
   transition: 0.2s ease-in-out;
 }
-nav .nav-bar .dropdown:hover .project[b-0qy933hfd2]{
+nav .nav-bar .dropdown:hover .project{
   height: 220px;
   
   visibility: visible;
 }
 
-nav .nav-bar .dropdown .project .drop-item[b-0qy933hfd2] {
+nav .nav-bar .dropdown .project .drop-item {
   list-style-type: none;
   margin-bottom: 10px;
 }
-nav .nav-bar .nav-bar_item a[b-0qy933hfd2] {
+nav .nav-bar .nav-bar_item a {
   position: relative;
   padding-bottom: 5px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-nav .nav-bar .nav-bar_item a[b-0qy933hfd2]:after {
+nav .nav-bar .nav-bar_item a:after {
   content: "";
   position: absolute;
   width: 0%;
@@ -85,8 +84,6 @@ nav .nav-bar .nav-bar_item a[b-0qy933hfd2]:after {
   background-color: #fff;
   transition: 0.1s ease-in-out;
 }
-nav .nav-bar .nav-bar_item a:hover[b-0qy933hfd2]:after {
+nav .nav-bar .nav-bar_item a:hover:after {
   width: 100%;
 }
-/* _content/BlazorApp/Pages/Options.razor.rz.scp.css */
-/* _content/BlazorApp/Pages/Play.razor.rz.scp.css */

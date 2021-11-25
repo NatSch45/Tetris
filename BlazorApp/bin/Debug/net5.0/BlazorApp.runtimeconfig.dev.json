@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mella\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mella\\.nuget\\packages"
+    ]
+  }
+}

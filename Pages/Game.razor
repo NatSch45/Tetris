@@ -1,0 +1,30 @@
+@page "/game"
+@inherits Tetris.Code.Grid
+
+<PageTitle>Game</PageTitle>
+
+<h1>Game</h1>
+
+<p>Here's the game page</p>
+
+<p>You are typing these keys : @key</p>
+<input type="text" @onkeypress="listenKey" autofocus>
+
+<div class="card-deck m-3" style="display: grid; grid-template-columns: repeat(10, 1fr); width: 60%">
+    @* <div class="card-header" style="display: block">
+        <h2>Grid of @grid.Count</h2>
+    </div> *@
+    @foreach (var cell in grid) {
+        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+            <p class="toString" style="margin-top: 25%">@cell.val</p>
+        </div>
+    }
+</div>
+
+@code {
+    private string key = "";
+
+    private void listenKey(KeyboardEventArgs args) {
+        key = args.Key;
+    }
+}

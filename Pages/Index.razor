@@ -1,0 +1,18 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<PageTitle>Index</PageTitle>
+
+<h1>TETRIZ</h1>
+
+Welcome to Tetriz game, a third-21-chromosome version of the famous Tetris !
+<br>
+<button class="btn btn-primary" @onclick="navigateToGame">Play game !</button>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    public void navigateToGame() {
+        NavigationManager.NavigateTo("Game");
+    }
+}

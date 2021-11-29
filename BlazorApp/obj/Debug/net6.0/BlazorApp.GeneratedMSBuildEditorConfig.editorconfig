@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp
 build_property.RootNamespace = BlazorApp
-build_property.ProjectDir = C:\Users\mella\Tetris\Tetris\BlazorApp\
+build_property.ProjectDir = C:\Users\nicos\Documents\Tetris\Tetris\BlazorApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mella\Tetris\Tetris\BlazorApp
+build_property.MSBuildProjectDirectory = C:\Users\nicos\Documents\Tetris\Tetris\BlazorApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/App.razor]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/_Imports.razor]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Menu.razor]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/Menu.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-0qy933hfd2
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Options.razor]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/Options.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3B0aW9ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-8y4xg7p5z2
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Play.razor]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/Play.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-quadffupcb
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/Error.cshtml]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Host.cshtml]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mella/Tetris/Tetris/BlazorApp/Pages/_Layout.cshtml]
+[C:/Users/nicos/Documents/Tetris/Tetris/BlazorApp/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

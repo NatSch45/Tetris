@@ -2,8 +2,58 @@
 
 <PageTitle> Options </PageTitle>
 
-<h3>Options</h3>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 
-@code {
+<nav>
+  <a class="logo" href="#">Logo</a>
+  <ul class="nav-bar">
+    <li class="nav-bar_item"><a href="">home</a></li>
+    <li class="nav-bar_item"><a href="">about</a></li>
+    <li class="nav-bar_item dropdown">
+      <a href="#">project</a>
+      <ul class="project">
+        <li class="drop-item"><a href="">Work 1</a></li>
+        <li class="drop-item"><a href="">Work 2</a></li>
+        <li class="drop-item"><a href="">Work 3</a></li>
+        <li class="drop-item"><a href="">Work 4</a></li>
+        <li class="drop-item"><a href="">Work 5</a></li>
+        <li class="drop-item"><a href="">Work 6</a></li>
+      </ul>
+    </li>
+    <li class="nav-bar_item"><a href="">services</a></li>
+    <li class="nav-bar_item"><a href="">contact</a></li>
+  </ul>
+</nav>
 
-}
+
+<select name="options" class="select--sm">
+  <option value="option-1">Choose ur Speed</option>
+  <option value="option-2">Slow</option>
+  <option value="option-3">Normal</option>
+  <option value="option-3">Fast</option>
+</select>
+<div class="select__vertical-spacing--top">
+  <select name="options" class="select--md">
+    <option value="option-1">Select ur Grid</option>
+    <option value="option-2">5 x 10</option>
+    <option value="option-3">10 x 20</option>
+    <option value="option-3">20 x 40</option>
+  </select>
+</div>
+<div class="select--lg">
+  <button class="favorite styled"
+        type="button">
+    Apply
+  </button>
+</div> 
+
+<div class="footbar">
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-bar_item"><a href="">Created By </a></li>
+      <li class="nav-bar_item"><a href="">Nathan</a></li>
+      <li class="nav-bar_item"><a href="">Nathy</a></li>
+      <li class="nav-bar_item"><a href="">Nicolas</a></li>
+    </ul>
+  </nav>
+</div>

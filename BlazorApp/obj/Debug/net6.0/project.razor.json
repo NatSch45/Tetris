@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\BlazorApp.csproj",
+  "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\BlazorApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -12,35 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1478385515,
+        "HashCode": 1514081592,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Options",
+        "Name": "BlazorApp.Pages.Menu",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Options"
+            "TagName": "Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Options"
+          "Common.TypeName": "BlazorApp.Pages.Menu"
         }
       },
       {
-        "HashCode": -590000156,
+        "HashCode": 958317565,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Options",
+        "Name": "BlazorApp.Pages.Menu",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Options"
+            "TagName": "BlazorApp.Pages.Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Options",
+          "Common.TypeName": "BlazorApp.Pages.Menu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -78,35 +78,35 @@
         }
       },
       {
-        "HashCode": 1514081592,
+        "HashCode": 1478385515,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Menu",
+        "Name": "BlazorApp.Pages.Options",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Menu"
+            "TagName": "Options"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Menu"
+          "Common.TypeName": "BlazorApp.Pages.Options"
         }
       },
       {
-        "HashCode": 958317565,
+        "HashCode": -590000156,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Menu",
+        "Name": "BlazorApp.Pages.Options",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Menu"
+            "TagName": "BlazorApp.Pages.Options"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Menu",
+          "Common.TypeName": "BlazorApp.Pages.Options",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16430,43 +16430,43 @@
   "RootNamespace": "BlazorApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\Options.razor",
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\Options.razor",
       "TargetPath": "Pages\\Options.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\Menu.razor",
-      "TargetPath": "Pages\\Menu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\Play.razor",
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\Play.razor",
       "TargetPath": "Pages\\Play.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\mella\\Tetris\\Tetris\\BlazorApp\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\Menu.razor",
+      "TargetPath": "Pages\\Menu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicos\\Documents\\Tetris\\Tetris\\BlazorApp\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     }
   ],

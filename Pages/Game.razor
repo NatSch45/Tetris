@@ -15,7 +15,7 @@
         <h2>Grid of @grid.Count</h2>
     </div> *@
     @foreach (var cell in grid) {
-        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+        <div class="card" style="display: flex; justify-content: center; align-items: center; outline: solid black 1px; border-radius: 0">
             <p class="toString" style="margin-top: 25%">@cell.val</p>
         </div>
     }

@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": -521843828,
+        "Kind": "Components.Component",
+        "Name": "Tetris.Pages.Counter",
+        "AssemblyName": "Tetris",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tetris.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1188293823,
+        "Kind": "Components.Component",
+        "Name": "Tetris.Pages.Counter",
+        "AssemblyName": "Tetris",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tetris.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tetris.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1249040358,
         "Kind": "Components.Component",
         "Name": "Tetris.Pages.Credits",
@@ -111,35 +144,35 @@
         }
       },
       {
-        "HashCode": -521843828,
+        "HashCode": -1718090184,
         "Kind": "Components.Component",
-        "Name": "Tetris.Pages.Counter",
+        "Name": "Tetris.Pages.Index",
         "AssemblyName": "Tetris",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.Counter"
+          "Common.TypeName": "Tetris.Pages.Index"
         }
       },
       {
-        "HashCode": -1188293823,
+        "HashCode": -2108235254,
         "Kind": "Components.Component",
-        "Name": "Tetris.Pages.Counter",
+        "Name": "Tetris.Pages.Index",
         "AssemblyName": "Tetris",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Tetris.Pages.Counter"
+            "TagName": "Tetris.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.Counter",
+          "Common.TypeName": "Tetris.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -173,39 +206,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Tetris.Pages.Options",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1718090184,
-        "Kind": "Components.Component",
-        "Name": "Tetris.Pages.Index",
-        "AssemblyName": "Tetris",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -2108235254,
-        "Kind": "Components.Component",
-        "Name": "Tetris.Pages.Index",
-        "AssemblyName": "Tetris",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tetris.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

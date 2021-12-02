@@ -12,12 +12,13 @@
 
 <div class="playerInterface">
     <button type="submit" @onclick="setTetrimino"> Add a tetrimino </button>
+    <button type="submit"> &#x3008;-- </button>
+    <button type="submit"> --&#x3009; </button>
 </div>
 
 <div class="card-deck m-3 grid">
     @foreach (var cell in gridObject.grid) {
-        <div class="card cell @cell.name">
-        </div>
+        <div class="card cell @cell.name"></div>
     }
 </div>
 
@@ -32,4 +33,5 @@
     {
         gridObject.grid = this.getGrid();
     }
+
 }

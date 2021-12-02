@@ -21,6 +21,12 @@ public class Game : ComponentBase {
         this.gridObject.addTetrimino(tetrimino);
     }
 
+    public void moveTetrimino(bool isRight) {
+        if (this.gridObject.tetriminos.Any()) {
+            this.gridObject.tetriminos[this.gridObject.tetriminos.Count - 1].moveX(gridObject, isRight);
+        }
+    }
+
     public List<Cell> getGrid() {
         return this.gridObject.grid;
     }

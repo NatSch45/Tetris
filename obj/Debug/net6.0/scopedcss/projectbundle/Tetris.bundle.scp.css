@@ -1,3 +1,36 @@
+/* _content/Tetris/Pages/Game.razor.rz.scp.css */
+h1[b-lzcg61zzx7] {
+    color: blueviolet;
+}
+
+.I[b-lzcg61zzx7] { background-color: #30C7ED; }
+
+.O[b-lzcg61zzx7] { background-color: #F5D507; }
+
+.T[b-lzcg61zzx7] { background-color: #AE4D9E; }
+
+.L[b-lzcg61zzx7] { background-color: #F17922; }
+
+.J[b-lzcg61zzx7] { background-color: #5866AF; }
+
+.Z[b-lzcg61zzx7] { background-color: #EE212A; }
+
+.S[b-lzcg61zzx7] { background-color: #40B73E; }
+
+.grid[b-lzcg61zzx7] {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 60%;
+}
+
+.cell[b-lzcg61zzx7] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid black 1px;
+    border-radius: 0;
+    aspect-ratio: 1;
+}
 /* _content/Tetris/Shared/MainLayout.razor.rz.scp.css */
 .page[b-3kke1cwo7a] {
     position: relative;

@@ -1,3 +1,4 @@
+namespace Tetris.Code;
 public class Timer {
     private static System.Timers.Timer? timer;
 

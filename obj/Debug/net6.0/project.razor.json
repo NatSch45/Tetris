@@ -12,35 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 846919896,
+        "HashCode": -2045627005,
         "Kind": "Components.Component",
-        "Name": "Tetris.Code.Grid",
+        "Name": "Tetris.Code.Game",
         "AssemblyName": "Tetris",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Grid"
+            "TagName": "Game"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Code.Grid"
+          "Common.TypeName": "Tetris.Code.Game"
         }
       },
       {
-        "HashCode": 156475772,
+        "HashCode": 1597241898,
         "Kind": "Components.Component",
-        "Name": "Tetris.Code.Grid",
+        "Name": "Tetris.Code.Game",
         "AssemblyName": "Tetris",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Tetris.Code.Grid"
+            "TagName": "Tetris.Code.Game"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Code.Grid",
+          "Common.TypeName": "Tetris.Code.Game",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -111,39 +111,6 @@
         }
       },
       {
-        "HashCode": 433830003,
-        "Kind": "Components.Component",
-        "Name": "Tetris.Pages.FetchData",
-        "AssemblyName": "Tetris",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -933090503,
-        "Kind": "Components.Component",
-        "Name": "Tetris.Pages.FetchData",
-        "AssemblyName": "Tetris",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tetris.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tetris.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1718090184,
         "Kind": "Components.Component",
         "Name": "Tetris.Pages.Index",
@@ -206,6 +173,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Tetris.Pages.Options",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 433830003,
+        "Kind": "Components.Component",
+        "Name": "Tetris.Pages.FetchData",
+        "AssemblyName": "Tetris",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tetris.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -933090503,
+        "Kind": "Components.Component",
+        "Name": "Tetris.Pages.FetchData",
+        "AssemblyName": "Tetris",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tetris.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tetris.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

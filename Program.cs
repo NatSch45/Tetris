@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Tetris.Data;
+using Tetris.Code;
 using System.Timers;
 
 var builder = WebApplication.CreateBuilder(args);

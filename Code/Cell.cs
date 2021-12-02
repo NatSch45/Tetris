@@ -5,9 +5,13 @@ public class Cell {
     public int posX;
     public int posY;
 
-    public Cell(int x, int y) {
+    public string? name;
+
+    public Cell(int x, int y, int val = 0, string name = "none") {
         this.posX = x;
         this.posY = y;
+        this.val = val;
+        this.name = name;
     }
 
     public void fill(int newVal){

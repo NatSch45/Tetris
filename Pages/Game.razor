@@ -1,5 +1,5 @@
 @page "/game"
-@inherits Tetris.Code.Grid
+@inherits Tetris.Code.Game
 
 <PageTitle>Game</PageTitle>
 
@@ -10,13 +10,13 @@
 <p>You are typing these keys : @key</p>
 <input type="text" @onkeypress="listenKey" autofocus>
 
-<div class="card-deck m-3" style="display: grid; grid-template-columns: repeat(10, 1fr); width: 60%">
-    @* <div class="card-header" style="display: block">
-        <h2>Grid of @grid.Count</h2>
-    </div> *@
-    @foreach (var cell in grid) {
-        <div class="card" style="display: flex; justify-content: center; align-items: center; outline: solid black 1px; border-radius: 0">
-            <p class="toString" style="margin-top: 25%">@cell.val</p>
+<div class="playerInterface">
+    <button type="submit" @onclick="setTetrimino"> Add a tetrimino </button>
+</div>
+
+<div class="card-deck m-3 grid">
+    @foreach (var cell in gridObject.grid) {
+        <div class="card cell @cell.name">
         </div>
     }
 </div>
@@ -26,5 +26,10 @@
 
     private void listenKey(KeyboardEventArgs args) {
         key = args.Key;
+    }
+
+    protected override void OnInitialized()
+    {
+        gridObject.grid = this.getGrid();
     }
 }

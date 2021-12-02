@@ -25,3 +25,4 @@
 /home/nathan/Tetris/obj/Debug/net6.0/ref/Tetris.dll
 /home/nathan/Tetris/obj/Debug/net6.0/Tetris.pdb
 /home/nathan/Tetris/obj/Debug/net6.0/Tetris.genruntimeconfig.cache
+/home/nathan/Tetris/obj/Debug/net6.0/scopedcss/Pages/Game.razor.rz.scp.css

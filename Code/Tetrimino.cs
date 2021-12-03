@@ -64,20 +64,8 @@ public class Tetrimino {
             }
         }
         this.tetriminoCells.ForEach(cell => {
-            if (isRight) {
-                cell.posY++;
-                if (cell.val != 0) {
-                    cell.posY--;
-                    return;
-                }
-                cell.posY--;
-            } else {
-                cell.posY--;
-                if (cell.val != 0) {
-                    cell.posY++;
-                    return;
-                }
-                cell.posY++;
+            if(grid.grid[cell.posX*10 + cell.posY + (isRight ? 1 : -1)].val != 0 && !tetriminoCells.Contains(grid.grid[cell.posX *10 + cell.posY + (isRight ? 1 : -1)])) {
+                isGoodMove = false;
             }
         });
         if (isGoodMove && isRight) {
@@ -93,7 +81,7 @@ public class Tetrimino {
         bool isGoodDrop = true;
 
         foreach (var cell in tetriminoCells!) {
-            if (cell.posX *10 + cell.posY + 10 <= 200) {
+            if (cell.posX *10 + cell.posY + 10 < 200) {
                 if (grid.grid[cell.posX *10 + cell.posY + 10].val != 0 && !tetriminoCells.Contains(grid.grid[cell.posX *10 + cell.posY + 10])) {
                     isGoodDrop = false;
                     break;
@@ -128,7 +116,7 @@ public class Tetrimino {
         }
         testCells.ForEach(cell => {
             if (cell.posX*10 + cell.posY <= 200) {
-                if (grid.grid[cell.posX*10 + cell.posY].val != 0) {
+                if (grid.grid[cell.posX*10 + cell.posY].val != 0 && !tetriminoCells.Contains(grid.grid[cell.posX *10 + cell.posY])) {
                     return;
                 }
             }

@@ -17,6 +17,7 @@ public class Game : ComponentBase {
         tetrimino.chooseTetrimino(rnd.Next(7));
 
         Game.gridObject.addTetrimino(tetrimino);
+        Round.checkFullLines(gridObject);
     }
 
     public void moveTetrimino(bool isRight) {

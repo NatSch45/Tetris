@@ -23,7 +23,6 @@
     </div>
 </div>
 
-
 @code {
     private bool isRunning = true;
     protected override void OnInitialized()
@@ -42,7 +41,7 @@
         {
             while(!isEndOfCourse)
             {
-                await Task.Delay(5000);
+                await Task.Delay(1000);
                 dropTetrimino();
                 StateHasChanged();
             }

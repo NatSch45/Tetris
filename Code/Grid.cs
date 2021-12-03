@@ -16,6 +16,7 @@ public class Grid{
         this.createGrid();
         this.tetriminos.Add(tetrimino);
         this.setTetriminosOnGrid();
+        // Tetrimino.allTetriminos!.ForEach(tetrimino => tetrimino.tetriminoCells!.ForEach(cell => Console.WriteLine("({0}, {1})", cell.posX, cell.posY)));
     }
 
     public void createGrid() {

@@ -7,31 +7,53 @@
 
 <p>Here's the game page</p>
 
-<p>You are typing these keys : @key</p>
-<input type="text" @onkeypress="listenKey" autofocus>
-
 <div class="playerInterface">
-    <button type="submit" @onclick="setTetrimino"> Add a tetrimino </button>
-    <button type="submit"> &#x3008;-- </button>
-    <button type="submit"> --&#x3009; </button>
+    <button type="submit" @onclick="setTetrimino"> PLAY </button>
+    <button type="submit" @onclick="() => {isRunning = false;}"> STOP </button>
+    <button type="submit" @onclick="() => {moveTetrimino(false);}"> &#x3008;-- </button>
+    <button type="submit" @onclick="() => {moveTetrimino(true);}"> --&#x3009; </button>
+    <button type="submit" @onclick="rotateTetrimino">ROTATE</button>
+    <button type="submit" @onclick="dropTetrimino">DROP</button>
+</div>
+<div class="mainContainer">
+    <div class="card-deck m-3 grid">
+        @foreach (var cell in gridObject.grid) {
+            <div class="card cell @cell.name"></div>
+        }
+    </div>
 </div>
 
-<div class="card-deck m-3 grid">
-    @foreach (var cell in gridObject.grid) {
-        <div class="card cell @cell.name"></div>
-    }
-</div>
 
 @code {
-    private string key = "";
-
-    private void listenKey(KeyboardEventArgs args) {
-        key = args.Key;
-    }
-
+    private bool isRunning = true;
     protected override void OnInitialized()
     {
         gridObject.grid = this.getGrid();
     }
 
+    protected override Task OnInitializedAsync()
+    {
+        Timer();
+        return base.OnInitializedAsync();
+    }
+
+    async Task Timer() {
+        while(isRunning)
+        {
+            while(!isEndOfCourse)
+            {
+                await Task.Delay(5000);
+                dropTetrimino();
+                StateHasChanged();
+            }
+            isEndOfCourse = false;
+            await afterTimer();
+            StateHasChanged();
+        }
+    }
+
+    Task afterTimer() {
+        setTetrimino();
+        return Task.CompletedTask;
+    }
 }

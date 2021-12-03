@@ -4,30 +4,46 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 public class Game : ComponentBase {
 
-    public Grid gridObject = new Grid();
+    public static Grid gridObject = new Grid();
+
+    public bool isEndOfCourse;
 
     public Game() {}
 
-    protected override Task OnInitializedAsync()
-    {
-        return base.OnInitializedAsync();
-    }
-
     public void setTetrimino() {
+        Tetrimino.initAllTetriminos();
         Random rnd = new Random();
         Tetrimino tetrimino = new Tetrimino();
         tetrimino.chooseTetrimino(rnd.Next(7));
 
-        this.gridObject.addTetrimino(tetrimino);
+        Game.gridObject.addTetrimino(tetrimino);
     }
 
     public void moveTetrimino(bool isRight) {
-        if (this.gridObject.tetriminos.Any()) {
-            this.gridObject.tetriminos[this.gridObject.tetriminos.Count - 1].moveX(gridObject, isRight);
+        if (Game.gridObject.tetriminos.Any()) {
+            Game.gridObject.tetriminos[Game.gridObject.tetriminos.Count - 1].move(Game.gridObject, isRight);
         }
+        Game.gridObject.createGrid();
+        Game.gridObject.setTetriminosOnGrid();
+    }
+
+    public void dropTetrimino() {
+        if (Game.gridObject.tetriminos.Any()) {
+            isEndOfCourse = Game.gridObject.tetriminos[Game.gridObject.tetriminos.Count - 1].drop(Game.gridObject);
+        }
+        Game.gridObject.createGrid();
+        Game.gridObject.setTetriminosOnGrid();
+    }
+
+    public void rotateTetrimino() {
+        if (Game.gridObject.tetriminos.Any()) {
+            Game.gridObject.tetriminos[Game.gridObject.tetriminos.Count - 1].rotate(Game.gridObject);
+        }
+        Game.gridObject.createGrid();
+        Game.gridObject.setTetriminosOnGrid();
     }
 
     public List<Cell> getGrid() {
-        return this.gridObject.grid;
+        return Game.gridObject.grid;
     }
 }

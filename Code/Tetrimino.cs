@@ -1,9 +1,11 @@
+using System.Numerics;
 namespace Tetris.Code;
 
 public class Tetrimino {
     public List<Cell>? tetriminoCells;
     public bool isDropped;
     public static List<Tetrimino>? allTetriminos;
+    public Vector2 Position;
 
     public Tetrimino() {
         this.tetriminoCells = new List<Cell>();
@@ -58,6 +60,10 @@ public class Tetrimino {
         }
     }
 
+    public void MoveAt(int pX, int pY)
+    {
+        Position = new Vector2(pX, pY);
+    }
     //* public void rotate() {
 
     //* }

@@ -16,6 +16,7 @@ public class Grid{
         this.createGrid();
         this.tetriminos.Add(tetrimino);
         this.setTetriminosOnGrid();
+        // Tetrimino.allTetriminos!.ForEach(tetrimino => tetrimino.tetriminoCells!.ForEach(cell => Console.WriteLine("({0}, {1})", cell.posX, cell.posY)));
     }
 
     public void createGrid() {
@@ -61,6 +62,6 @@ public class Grid{
                 if (lineFull)
                     return line;
             }
-        return -1; // any line is fu
+        return "is full"
     }
 }

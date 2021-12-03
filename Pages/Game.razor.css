@@ -19,7 +19,7 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    width: 60%;
+    width: 25%;
 }
 
 .cell {
@@ -29,4 +29,10 @@ h1 {
     outline: solid black 1px;
     border-radius: 0;
     aspect-ratio: 1;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

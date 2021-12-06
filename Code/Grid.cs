@@ -47,21 +47,4 @@ public class Grid{
         return this.width;
     }
 
-    public int GetFullLine() {
-        bool lineFull = true;
-        grid = new List<Cell>();
-        for (int line = width - 1; line >= 0; line--) 
-        {
-        lineFull = true;
-            for (int col = 0; col < height; col++)
-                {
-                    int ID = height;
-                    if (ID == -1)
-                        lineFull = false;
-                }
-                if (lineFull)
-                    return line;
-            }
-        return "is full"
-    }
 }

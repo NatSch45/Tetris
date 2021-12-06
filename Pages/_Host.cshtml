@@ -1,0 +1,14 @@
+﻿@page "/"
+@namespace Tetris.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<component type="typeof(App)" render-mode="Server" />
+
+@* <script>
+    window.addEventListener('keydown', (e) => {
+        console.log(e.key);
+    });
+</script> *@

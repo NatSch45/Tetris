@@ -1,0 +1,38 @@
+h1 {
+    color: blueviolet;
+}
+
+.I { background-color: #30C7ED; }
+
+.O { background-color: #F5D507; }
+
+.T { background-color: #AE4D9E; }
+
+.L { background-color: #F17922; }
+
+.J { background-color: #5866AF; }
+
+.Z { background-color: #EE212A; }
+
+.S { background-color: #40B73E; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 25%;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid black 1px;
+    border-radius: 0;
+    aspect-ratio: 1;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

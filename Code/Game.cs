@@ -6,17 +6,23 @@ public class Game : ComponentBase {
 
     public static Grid gridObject = new Grid();
 
+    public bool isRunning = true;
     public bool isEndOfCourse;
 
-    public Game() {}
+    public int timerDelay = 800;
+
+    public Game() {Tetrimino.initAllTetriminos();}
 
     public void setTetrimino() {
-        Tetrimino.initAllTetriminos();
+        Round.checkFullLines(Game.gridObject);
+
         Random rnd = new Random();
         Tetrimino tetrimino = new Tetrimino();
-        tetrimino.chooseTetrimino(rnd.Next(7));
-
-        Game.gridObject.addTetrimino(tetrimino);
+        tetrimino.chooseTetrimino(rnd.Next(Tetrimino.allTetriminos!.Count));
+        isRunning = !Round.isGameOver(Game.gridObject, tetrimino);
+        if (isRunning) {
+            Game.gridObject.addTetrimino(tetrimino);
+        }
     }
 
     public void moveTetrimino(bool isRight) {

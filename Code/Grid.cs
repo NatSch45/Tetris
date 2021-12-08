@@ -34,7 +34,7 @@ public class Grid{
         {
             foreach (var cell in tetrimino.tetriminoCells!)
             {
-                this.grid[cell.posX*10 + cell.posY] = cell;
+                this.grid[cell.posX*width + cell.posY] = cell;
             }
         }
     }

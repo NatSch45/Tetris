@@ -46,4 +46,5 @@ public class Grid{
     public int getWidth() {
         return this.width;
     }
+
 }

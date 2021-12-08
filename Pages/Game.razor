@@ -3,28 +3,48 @@
 
 <PageTitle>Game</PageTitle>
 
-<h1>Game</h1>
+<h1>TETRIZ</h1>
 
-<p>Here's the game page</p>
-
-<div class="playerInterface">
-    <button type="submit" @onclick="setTetrimino"> PLAY </button>
-    <button type="submit" @onclick="() => {isRunning = false;}"> STOP </button>
-    <button type="submit" @onclick="() => {moveTetrimino(false);}"> &#x3008;-- </button>
-    <button type="submit" @onclick="() => {moveTetrimino(true);}"> --&#x3009; </button>
-    <button type="submit" @onclick="rotateTetrimino">ROTATE</button>
-    <button type="submit" @onclick="dropTetrimino">DROP</button>
-</div>
-<div class="mainContainer">
-    <div class="card-deck m-3 grid">
-        @foreach (var cell in gridObject.grid) {
-            <div class="card cell @cell.name"></div>
-        }
+<div class="game @isRunning">
+    <div class="playerInterface">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-primary" @onclick="setTetrimino">
+                <span class="oi oi-media-play" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-outline-primary fixBootstrap" @onclick="() => {moveTetrimino(false);}">
+                <span class="oi oi-arrow-thick-left" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-outline-primary fixBootstrap" @onclick="dropTetrimino">
+                <span class="oi oi-arrow-thick-bottom" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-outline-primary" @onclick="() => {moveTetrimino(true);}">
+                <span class="oi oi-arrow-thick-right" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <div class="btn-group mr-2" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-outline-primary" @onclick="rotateTetrimino">
+                <span class="oi oi-reload" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="card-deck m-3 grid">
+            @foreach (var cell in gridObject.grid) {
+                <div class="card cell @cell.name">@*(@cell.posX, @cell.posY)*@</div>
+            }
+        </div>
     </div>
 </div>
 
+<div class="gameOver" hidden="@isRunning">
+    <h1>GAME OVER</h1>
+</div>
+
 @code {
-    private bool isRunning = true;
     protected override void OnInitialized()
     {
         gridObject.grid = this.getGrid();
@@ -41,7 +61,7 @@
         {
             while(!isEndOfCourse)
             {
-                await Task.Delay(1000);
+                await Task.Delay(timerDelay);
                 dropTetrimino();
                 StateHasChanged();
             }

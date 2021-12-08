@@ -5,7 +5,7 @@ public class Tetrimino {
 
     public double brickCenterX;
     public double brickCenterY;
-    public static List<Tetrimino>? allTetriminos;
+    public static List<Tetrimino>? allTetriminos; // List of all 7 tetriminos in their initialized coordinates 
 
     public Tetrimino() {
         this.tetriminoCells = new List<Cell>();
@@ -28,7 +28,7 @@ public class Tetrimino {
         grid.addTetrimino(this);
     }
 
-    public static void initAllTetriminos() {
+    public static void initAllTetriminos() { // Initialize list of allTetriminos variable
         Tetrimino.allTetriminos = new List<Tetrimino>() {
             new Tetrimino(new List<Cell>() {
                 new Cell(0,3,1,"I"), new Cell(0,4,1,"I"), new Cell(0,5,1,"I"), new Cell(0,6,1,"I")
@@ -77,12 +77,14 @@ public class Tetrimino {
         }
     }
 
-    public bool drop(Grid grid) {
+    public bool drop(Grid gridObject) {
         bool isGoodDrop = true;
+        int gridWidth = gridObject.getWidth();
+        int gridHeight = gridObject.getHeight();
 
         foreach (var cell in tetriminoCells!) {
-            if (cell.posX *10 + cell.posY + 10 < 200) {
-                if (grid.grid[cell.posX *10 + cell.posY + 10].val != 0 && !tetriminoCells.Contains(grid.grid[cell.posX *10 + cell.posY + 10])) {
+            if (cell.posX *gridWidth + cell.posY + gridWidth < gridWidth*gridHeight) {
+                if (gridObject.grid[cell.posX *gridWidth + cell.posY + gridWidth].val != 0 && !tetriminoCells.Contains(gridObject.grid[cell.posX *gridWidth + cell.posY + gridWidth])) {
                     isGoodDrop = false;
                     break;
                 }
@@ -99,24 +101,28 @@ public class Tetrimino {
         return true;
     }
 
-    public void rotate(Grid grid) {
+    public void rotate(Grid gridObject) {
+        int gridWidth = gridObject.getWidth();
+        int gridHeight = gridObject.getHeight();
+        double angle = Math.PI/2;
+
         List<Cell> testCells = new List<Cell>();
         foreach (var cell in this.tetriminoCells!)
         {
             double valX = cell.posX - brickCenterX;
             double valY = cell.posY - brickCenterY;
-            valY *= -1;
-            int testX = (int)Math.Round((valX * Math.Cos(Math.PI/2) - valY * Math.Sin(Math.PI/2))+brickCenterX);
-            int testY = (int)Math.Round(((valX * Math.Sin(Math.PI/2) + valY * Math.Cos(Math.PI/2)) * -1)+brickCenterY);
-            if (!(testX >= 0 && testX <= 19) || !(testY >= 0 && testY <= 9)) {
+            valY = -valY;
+            int testX = (int)Math.Round((valX * Math.Cos(angle) - valY * Math.Sin(angle))+brickCenterX);
+            int testY = (int)Math.Round((-(valX * Math.Sin(angle) + valY * Math.Cos(angle)))+brickCenterY);
+            if (!(testX >= 0 && testX <= (gridHeight-1)) || !(testY >= 0 && testY <= (gridWidth-1))) {
                 return;
             } else {
                 testCells.Add(new Cell(testX, testY, cell.val, cell.name!));
             }
         }
         testCells.ForEach(cell => {
-            if (cell.posX*10 + cell.posY <= 200) {
-                if (grid.grid[cell.posX*10 + cell.posY].val != 0 && !tetriminoCells.Contains(grid.grid[cell.posX *10 + cell.posY])) {
+            if (cell.posX*gridWidth + cell.posY <= gridWidth+gridHeight) {
+                if (gridObject.grid[cell.posX*gridWidth + cell.posY].val != 0 && !tetriminoCells.Contains(gridObject.grid[cell.posX *gridWidth + cell.posY])) {
                     return;
                 }
             }

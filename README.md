@@ -9,9 +9,9 @@ pour l'exécuter dans le navigateur.
 
 - Création du jeu Tetris
 
-- mis en place d'un menu avec les commandes de jeu
+- Mise en place d'un menu avec les commandes de jeu
 
-- Ajout d'option comme changer la taille de la grille ou la   vitesse de jeu
+- Ajout d'options comme changer la taille de la grille ou la vitesse de jeu
 
 - Ajout de crédits
 
@@ -29,11 +29,11 @@ pour l'exécuter dans le navigateur.
 
 - Utilisation du Framework Blazor 
 
-- La page game avec les bouttons pour jouer
+- La page game avec les boutons pour jouer
 
 - La page options avec les différentes fonctionnalités (vitesse des tetriminos, taille de la grille)
 
-- Une page crédits (noms des étudiants, lien vers le jeu officiel et langage utilisé)
+- Une page crédits (noms des étudiants, lien vers le jeu officiel et langages utilisés)
 
 # Pour commencer
 
@@ -49,22 +49,22 @@ Pour le lancement du jeu effectuer la commande suivante :
 
 `dotnet watch run` ou `dotnet run`
 
-puis une page web va s'ouvrir automatiquement
+Une page web va s'ouvrir automatiquement, sinon il faudra se rendre sur l'adresse ***https://localhost:7077***.
 
 
-# 🎥 démonstration
+# 🎥 Démonstration
 
 - [jeu officiel](https://tetris.com/play-tetris)
 
 # 🖥 Réalisation
 
-Front-End et Back-End :
+Front-End & Back-end :
+
+- <img alt="Blazor" src="https://img.shields.io/badge/Blazor-%2307405e.svg?style=for-the-badge&logo=Blazor&logoColor=white"/>
+
+Back-End :
 
 - <img alt="C#" src="https://img.shields.io/badge/Csharp-%23E34F26.svg?style=for-the-badge&logo=Csharp&logoColor=white"/> 
-
-Front-End :
-
-- <img alt="Blazor" src ="https://img.shields.io/badge/Blazor-%2307405e.svg?style=for-the-badge&logo=Blazor&logoColor=white"/>
 
 # 👥 Équipe
 
@@ -72,7 +72,7 @@ Projet réalisé à Nantes Ynov Campus par les apprenants de la promo B2 Informa
 
 - ``NATHAN SCHNEIDER`` alias [@NatSch45](https://github.com/NatSch45)
 
-- ``NICOLAS SEGURA`` alias [@nsegur66](https://github.com/settings/profile)
+- ``NICOLAS SEGURA`` alias [@nsegur66](https://github.com/nsegur66)
 
 - ``NATHY MELLAL`` alias [@nathymellal](https://github.com/nathymellal)
 

@@ -66,6 +66,20 @@ Back-End :
 
 - <img alt="C#" src="https://img.shields.io/badge/Csharp-%23E34F26.svg?style=for-the-badge&logo=Csharp&logoColor=white"/> 
 
+# Axes d'amélioration
+
+Voici la liste des différentes fonctionnalités et éléments du site qui n'ont pas pu être aboutis par manque de temps :
+
+- Suppression d'une ligne lorsqu'elle est pleine ainsi que la chute de toutes les lignes au-dessus 
+
+- Calcul du score d'une partie et affichage du/des record(s)
+
+- Collisions contre les autres tetriminos de la grille lors de la rotation d'un tetrimino
+
+- Prise en compte des options
+
+- Éviter la multiplication de tâches asynchrones lorsque la page est rafraîchie 
+
 # 👥 Équipe
 
 Projet réalisé à Nantes Ynov Campus par les apprenants de la promo B2 Informatique 2021/2022

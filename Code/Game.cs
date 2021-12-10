@@ -20,7 +20,7 @@ public class Game : ComponentBase { // Game class inherits ComponentBase, so do 
 
     /// <summary>Set a tetrimino on the grid and check for all round verifications</summary>
     public void setTetrimino() {
-        Round.checkFullLines(Game.gridObject);
+        // Round.checkFullLines(Game.gridObject); // Implementation not successful yet
 
         Random rnd = new Random();
         Tetrimino tetrimino = new Tetrimino();

@@ -1,15 +1,43 @@
 ﻿@page "/"
+
 @inject NavigationManager NavigationManager
+<PageTitle>Menu</PageTitle>
 
-<PageTitle>Index</PageTitle>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-<h1>TETRIZ</h1>
+<div class="wrapper">
+  <a href='Credits'><button>
+     Credits
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button></a>
+</div>
 
-Welcome to Tetriz game, a third-21-chromosome version of the famous Tetris !
-<br>
-<button class="btn btn-primary" @onclick="navigateToGame">Play game !</button>
+<div class="wrap">
+  <a href='Options'><button>
+    Options 
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button></a>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="wra">
+  <a href='Game'><button>
+    Play
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button></a>
+</div>
+
 
 @code {
     public void navigateToGame() {

@@ -19,7 +19,7 @@ public class Cell {
     }
 
     /// <summary>Fill the value property of Cell</summary>
-    /// <param name=""></param>
+    /// <param name="newValue">New value assigned to cell</param>
     public void fill(int newValue){
         if (newValue >= 0 && newValue <= Tetrimino.allTetriminos!.Count) {
             this.value = newValue;
@@ -28,6 +28,7 @@ public class Cell {
         }
     }
 
+    /// <summary>Get value of grid</summary>
     public int getValue() {
         return this.value;
     }

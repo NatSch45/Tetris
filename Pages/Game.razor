@@ -34,7 +34,7 @@
     <div class="mainContainer">
         <div class="card-deck m-3 grid">
             @foreach (var cell in gridObject.grid) {
-                <div class="card cell @cell.name">@*(@cell.posX, @cell.posY)*@</div>
+                <div class="card cell @cell.name"></div>
             }
         </div>
     </div>
@@ -45,18 +45,18 @@
 </div>
 
 @code {
-    protected override void OnInitialized()
+    protected override void OnInitialized() // ComponentBase method that is executed when component is ready to start
     {
         gridObject.grid = this.getGrid();
     }
 
-    protected override Task OnInitializedAsync()
+    protected override Task OnInitializedAsync() // Same as OnInitialized() but allow to perform an asynchronous task
     {
         Timer();
         return base.OnInitializedAsync();
     }
 
-    async Task Timer() {
+    async Task Timer() { // Timer of the game, based on a task delay into a loop
         while(isRunning)
         {
             while(!isEndOfCourse)
@@ -71,7 +71,7 @@
         }
     }
 
-    Task afterTimer() {
+    Task afterTimer() { // Function called after each tetrimino drop tour of loop to place next tetrimino on grid
         setTetrimino();
         return Task.CompletedTask;
     }

@@ -3,8 +3,8 @@ namespace Tetris.Code;
 using Microsoft.AspNetCore.Components;
 
 /// <summary>Represents the game, associate all classes needed with Game.razor (which inherits this class)</summary>
-public class Game : ComponentBase {
-
+public class Game : ComponentBase { // Game class inherits ComponentBase, so do it can be possible to use methods as OnInitialized() or StateHasChanged()
+                                    // which be helpful in the inherited view Game.razor
     public static Grid gridObject = new Grid();
 
     /// <value>Boolean for game loop</value>

@@ -2,14 +2,16 @@ namespace Tetris.Code;
 
 /// <summary>Represents a grid that contains all cells and actions to use on it</summary>
 public class Grid{
-    private int width = 10;
-    private int height = 20;
+    private int width;
+    private int height;
     /// <value>List of cells that represent the grid</value>
     public List<Cell> grid = new List<Cell>();
     /// <value>List of tetriminos associated to grid</value>
     public List<Tetrimino> tetriminos = new List<Tetrimino>();
 
-    public Grid() {
+    public Grid(int width = 10, int height = 20) {
+        this.width = width;
+        this.height = height;
         createGrid();
         Tetrimino.initAllTetriminos();
     }
@@ -52,5 +54,17 @@ public class Grid{
     /// <summary>Get width of grid</summary>
     public int getWidth() {
         return this.width;
+    }
+
+    /// <summary>Set height of grid</summary>
+    /// <param name="newHeight">New height of grid</param>
+    public void setHeight(int newHeight) {
+        this.height = newHeight;
+    }
+
+    /// <summary>Set width of grid</summary>
+    /// <param name="newWidth">New width of grid</param>
+    public void setWidth(int newWidth) {
+        this.width = newWidth;
     }
 }
